@@ -7,7 +7,7 @@ import openai
 #OpenAI API key
 aienv = os.getenv('OPENAI_KEY')
 if aienv == None:
-    openai.api_key = "ENTER YOUR API KEY HERE"
+    openai.api_key = "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"
 else:
     openai.api_key = aienv
 print(aienv)
@@ -28,11 +28,11 @@ timstart = 300
 tim = 1
 
 #Defaults
-user = ""
-running = False
+user = " Kokushibotoken "
+running = True
 cache = None
 qcache = None
-chat_log = None
+chat_log = -1001639268386
 botname = 'Harshit ethic'
 username = 'harshitethic_bot'
 # Max chat log length (A token is about 4 letters and max tokens is 2048)
@@ -64,8 +64,8 @@ def start(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Hayuno'
+        username = 'Kokushibotoken'
         update.message.reply_text('Hi')
         return 
     else:
@@ -91,16 +91,16 @@ def reset(bot, update):
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Hayuno'
+        username = 'Hayuno_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return
     if tim == 1:
         chat_log = None
         cache = None
         qcache = None
-        botname = 'Harshit Ethic'
-        username = 'harshitethic_bot'
+        botname = 'Hayuno'
+        username = 'Hayuno_bot'
         update.message.reply_text('Bot has been reset, send a message!')
         return 
     else:
